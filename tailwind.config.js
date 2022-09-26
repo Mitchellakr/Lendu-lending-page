@@ -10,7 +10,11 @@ module.exports = {
       // 'lg': '2320px',
       'xl': '1440px',
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        '3xl': '10px 10px 0px #181818',
+      }
+    },
   },
   plugins: [],
 }

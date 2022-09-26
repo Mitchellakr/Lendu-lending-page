@@ -7,15 +7,13 @@ const Navbar = () => {
     const [nav, setNav] = useState(false);
     const handleNav = () => { setNav(!nav); }
 
-
-
     return (
         <>
-
+        
             {/* this is the header section*/}
 
-            <header className='w-full max-w-screen-xl mx-auto'>
-                <div className="w-4/5 mx-auto flex md:items-center justify-between py-4 item-start ">
+            <header className='w-full'>
+                <div className="w-4/5 max-w-screen-xl mx-auto flex md:items-center justify-between py-4 item-start ">
                     <h1 className='text-2xl mr-20'>Lendu</h1>
 
                     {/* Desktop Nav */}
