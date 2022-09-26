@@ -1,0 +1,71 @@
+body {
+  font-size: 14px;
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  font-family: 'NeueMachinaBold', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--body-color);
+}
+
+@font-face {
+  font-family: 'NeueMachinaBold';
+  src: url(./font/NeueMachinaBold.ttf);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* default styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: 0;
+}
+
+.backdrop::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 5px;
+  right: -4px;
+  width: 100%;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
+:root {
+  --primary-color: #181818;
+  --dark-grey-color: #858585;
+  --light-grey-color: #DCDCDC;
+  --white: #fff;
+}
+
+.backdropmenu::before {
+  content: "";
+  position: absolute;
+  background-color: red;
+  z-index: 999;
+  top: 5px;
+  right: -4px;
+  width: 100%;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 50px;
+}
