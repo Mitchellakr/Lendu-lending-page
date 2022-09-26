@@ -9,7 +9,7 @@ const Navbar = () => {
 
     return (
         <>
-        
+
             {/* this is the header section*/}
 
             <header className='w-full'>

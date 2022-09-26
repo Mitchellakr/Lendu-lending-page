@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroSection from './Component/HeroSection';
+import Lending from './Component/Lending';
 import Navbar from './Component/Navbar';
 
 export default function App() {
@@ -7,6 +8,7 @@ export default function App() {
         <>
             <Navbar />
             <HeroSection />
+            <Lending/>
         </>
     );
 }

@@ -69,3 +69,16 @@ code {
   border: 1px solid black;
   border-radius: 50px;
 }
+
+.card-card::before {
+  content: "";
+  position: absolute;
+  background-color: var(--primary-color);
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 90%;
+  height: 35px;
+  border-radius: 50px;
+}
