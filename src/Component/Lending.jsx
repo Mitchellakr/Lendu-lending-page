@@ -26,6 +26,9 @@ const Lending = () => {
         },
     ]
 
+    const [openTab, setOpenTab] = React.useState(1);
+
+
     return (
 
         <div className="my-8 mt-[4em] w-4/5 max-w-screen-xl mx-auto">
@@ -53,6 +56,77 @@ const Lending = () => {
 
             {/* mobile view */}
 
+            <div className='md:hidden flex justify-center'>
+                <div className="flex flex-col items-center justify-center max-w-xl">
+                    <ul className="flex gap-2 py-1 px-6 rounded-full bg-[#dcdcdc3d]">
+                        <li>
+                            <a
+                                href="#"
+                                onClick={() => setOpenTab(1)}
+                                className={` ${openTab === 1 ? "bg-[#181818] text-[#fff] rounded-full" : ""} inline-block px-4 py-2 text-gray-600 bg-white rounded-full shadow`}
+                            >
+                                Supply
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                onClick={() => setOpenTab(2)}
+                                className={` ${openTab === 2 ? "bg-[#181818] text-[#fff] rounded-full" : ""} inline-block px-4 py-2 text-gray-600 bg-white rounded-full shadow`}
+                            >
+                                Borrow
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                onClick={() => setOpenTab(3)}
+                                className={` ${openTab === 3 ? "bg-[#181818] text-[#fff] rounded-full" : ""} inline-block px-4 py-2 text-gray-600 bg-white rounded-full shadow`}
+                            >
+                                Nav
+                            </a>
+                        </li>
+                    </ul>
+                    <div className=" mt-6 bg-white border">
+                        <div className={openTab === 1 ? "block" : "hidden"}>
+                            <div className=" bg-white card-card relative grid grid-cols-2  p-8 rounded-[20px] border border-solid border-gray-400">
+                                <div className='border-r border-gray-400 border-solid border-y-0 border-l-0'>
+                                    <h3 className='text-[14px]'>{cardDatas[0].hl}</h3>
+                                    <p className='text-gray-400 text-[14px]'>${cardDatas[0].dl}</p>
+                                </div>
+                                <div className='flex items-end flex-col'>
+                                    <h3 className='text-[14px]'>{cardDatas[0].hr}</h3>
+                                    <p className='text-gray-400 text-[14px]'>${cardDatas[0].dr}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={openTab === 2 ? "block" : "hidden"}>
+                            <div className=" bg-white card-card relative grid grid-cols-2  p-8 rounded-[20px] border border-solid border-gray-400">
+                                <div className='border-r border-gray-400 border-solid border-y-0 border-l-0'>
+                                    <h3 className='text-[14px]'>{cardDatas[1].hl}</h3>
+                                    <p className='text-gray-400 text-[14px]'>${cardDatas[1].dl}</p>
+                                </div>
+                                <div className='flex items-end flex-col'>
+                                    <h3 className='text-[14px]'>{cardDatas[1].hr}</h3>
+                                    <p className='text-gray-400 text-[14px]'>${cardDatas[1].dr}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={openTab === 3 ? "block" : "hidden"}>
+                            <div className=" bg-white card-card relative grid grid-cols-2  p-8 rounded-[20px] border border-solid border-gray-400">
+                                <div className='border-r border-gray-400 border-solid border-y-0 border-l-0'>
+                                    <h3 className='text-[14px]'>{cardDatas[2].hl}</h3>
+                                    <p className='text-gray-400 text-[14px]'>${cardDatas[2].dl}</p>
+                                </div>
+                                <div className='flex items-end flex-col'>
+                                    <h3 className='text-[14px]'>{cardDatas[2].hr}</h3>
+                                    <p className='text-gray-400 text-[14px]'>${cardDatas[2].dr}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div >
     )
 }
