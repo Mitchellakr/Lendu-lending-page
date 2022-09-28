@@ -62,7 +62,7 @@ const Lending = () => {
                         <div>
                             <button
                                 onClick={() => setOpenTab(1)}
-                                className={` ${openTab === 1 ? "bg-[#181818] text-[#ffffff] rounded-full" : ""} inline-block px-8 py-2 text-gray-600 rounded-full text-[10px]`}
+                                className={` ${openTab === 1 ? "bg-[#181818] text-[#ffffff] rounded-full" : "text-[#181818]"} inline-block px-8 py-2 rounded-full text-[10px]`}
                             >
                                 Supply
                             </button>
@@ -70,7 +70,7 @@ const Lending = () => {
                         <div>
                             <button
                                 onClick={() => setOpenTab(2)}
-                                className={` ${openTab === 2 ? "bg-[#181818] text-[#ffffff] rounded-full" : ""} inline-block px-8 py-2 text-gray-600 rounded-full text-[10px]`}
+                                className={` ${openTab === 2 ? "bg-[#181818] text-[#ffffff] rounded-full" : "text-[#181818]"} inline-block px-8 py-2 rounded-full text-[10px]`}
                             >
                                 Borrow
                             </button>
@@ -78,7 +78,7 @@ const Lending = () => {
                         <div>
                             <button
                                 onClick={() => setOpenTab(3)}
-                                className={` ${openTab === 3 ? "bg-[#181818] text-[#ffffff] rounded-full" : ""} inline-block px-8 py-2 text-gray-600 rounded-full text-[10px]`}
+                                className={` ${openTab === 3 ? "bg-[#181818] text-[#ffffff] rounded-full" : "text-[#181818]"} inline-block px-8 py-2 rounded-full text-[10px]`}
                             >
                                 Nav
                             </button>
