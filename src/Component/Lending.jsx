@@ -39,7 +39,7 @@ const Lending = () => {
 
             {/* Desktop display  */}
 
-            <div className="hidden md:grid grid-cols-3 gap-4">
+            <div className="hidden sm:grid md:grid-cols-3 gap-4 grid-cols-1">
                 {cardDatas.map((cardData) => (
                     <div key={cardData.id} className=" bg-white card-card relative grid grid-cols-2  p-8 rounded-[20px] border border-solid border-gray-400">
                         <div className='border-r border-gray-400 border-solid border-y-0 border-l-0'>
@@ -56,14 +56,14 @@ const Lending = () => {
 
             {/* mobile view */}
 
-            <div className='md:hidden flex justify-center'>
+            <div className='sm:hidden flex justify-center'>
                 <div className="flex flex-col items-center justify-center max-w-xl">
-                    <ul className="flex gap-2 py-1 px-6 rounded-full bg-[#dcdcdc3d]">
+                    <ul className="flex gap-2 p-1 rounded-full bg-[#dcdcdc3d]">
                         <li>
                             <a
                                 href="#"
                                 onClick={() => setOpenTab(1)}
-                                className={` ${openTab === 1 ? "bg-[#181818] text-[#fff] rounded-full" : ""} inline-block px-4 py-2 text-gray-600 bg-white rounded-full shadow`}
+                                className={` ${openTab === 1 ? "bg-[#181818] text-[#ffffff] rounded-full" : ""} inline-block px-8 py-2 text-gray-600 rounded-full text-[10px]`}
                             >
                                 Supply
                             </a>
@@ -72,7 +72,7 @@ const Lending = () => {
                             <a
                                 href="#"
                                 onClick={() => setOpenTab(2)}
-                                className={` ${openTab === 2 ? "bg-[#181818] text-[#fff] rounded-full" : ""} inline-block px-4 py-2 text-gray-600 bg-white rounded-full shadow`}
+                                className={` ${openTab === 2 ? "bg-[#181818] text-[#ffffff] rounded-full" : ""} inline-block px-8 py-2 text-gray-600 rounded-full text-[10px]`}
                             >
                                 Borrow
                             </a>
@@ -81,13 +81,13 @@ const Lending = () => {
                             <a
                                 href="#"
                                 onClick={() => setOpenTab(3)}
-                                className={` ${openTab === 3 ? "bg-[#181818] text-[#fff] rounded-full" : ""} inline-block px-4 py-2 text-gray-600 bg-white rounded-full shadow`}
+                                className={` ${openTab === 3 ? "bg-[#181818] text-[#ffffff] rounded-full" : ""} inline-block px-8 py-2 text-gray-600 rounded-full text-[10px]`}
                             >
                                 Nav
                             </a>
                         </li>
                     </ul>
-                    <div className=" mt-6 bg-white border">
+                    <div className="w-full mt-6 bg-white border">
                         <div className={openTab === 1 ? "block" : "hidden"}>
                             <div className=" bg-white card-card relative grid grid-cols-2  p-8 rounded-[20px] border border-solid border-gray-400">
                                 <div className='border-r border-gray-400 border-solid border-y-0 border-l-0'>

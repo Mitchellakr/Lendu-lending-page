@@ -17,6 +17,11 @@ body {
   src: url(./font/NeueMachinaBold.ttf);
 }
 
+@font-face {
+  font-family: 'NeueMachina';
+  src: url(./font/NeueMachina.ttf);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -81,4 +86,12 @@ code {
   width: 90%;
   height: 35px;
   border-radius: 50px;
+}
+
+.table-color:nth-child(odd) {
+  background-color: var(--light-grey-color);
+}
+
+.machinalight {
+  font-family: 'NeueMachina';
 }

@@ -4,8 +4,8 @@ import learnicon from '../Images/learn-icon.svg'
 
 const HeroSection = () => {
     return (
-        <section className="w-full">
-            <div className="my-8 w-4/5 max-w-screen-xl mx-auto rounded-[30px] shadow-3xl md:shadow-none items-center border border-solid border-gray-400 py-2 px-8 grid md:grid-cols-2 grid-cols-1 gap-4">
+        <section className="w-full pt-[8em]">
+            <div className="relative w-4/5 max-w-screen-xl mx-auto rounded-[30px] shadow-3xl md:shadow-none items-center border border-solid border-gray-400 py-2 px-8 grid md:grid-cols-2 grid-cols-1 gap-4">
                 <div className='flex flex-col items-start '>
                     <div className="learn flex items-center gap-2 py-2">
                         <img src={learnicon} alt="learn icon" />

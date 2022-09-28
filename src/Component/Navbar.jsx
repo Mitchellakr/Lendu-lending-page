@@ -12,7 +12,7 @@ const Navbar = () => {
 
             {/* this is the header section*/}
 
-            <header className='w-full'>
+            <header className='w-full fixed bg-white shadow z-50'>
                 <div className="w-4/5 max-w-screen-xl mx-auto flex md:items-center justify-between py-4 item-start ">
                     <h1 className='text-2xl mr-20'>Lendu</h1>
 
@@ -30,7 +30,7 @@ const Navbar = () => {
 
                     {/* Mobile Nav */}
 
-                    <nav className={`md:hidden flex flex-col gap-4 left-0 right-0 fixed sm:left-[40%] top-[70px] items-center p-8 pt-6 sm:w-1/2 bg-black text-white sm:rounded-[20px] ${nav ? 'flex' : 'hidden'}`}>
+                    <nav className={`md:hidden z-50 flex flex-col gap-4 left-0 right-0 fixed sm:left-[40%] top-[70px] items-center p-8 pt-6 sm:w-1/2 bg-black text-white sm:rounded-[20px] ${nav ? 'flex' : 'hidden'}`}>
                         <button className="py-2 px-6 text-black rounded-full bg-white">Dashboard</button>
                         <a href="" className='text-gray-400'>Market</a>
                         <a href="" className='text-gray-400'>Stake</a>
