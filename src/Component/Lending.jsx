@@ -43,11 +43,11 @@ const Lending = () => {
                 {cardDatas.map((cardData) => (
                     <div key={cardData.id} className=" bg-white card-card relative grid grid-cols-2  p-8 rounded-[20px] border border-solid border-gray-400">
                         <div className='border-r border-gray-400 border-solid border-y-0 border-l-0'>
-                            <h3 className='text-[14px]'>{cardData.hl}</h3>
+                            <h3 className='text-[14px] text-[#181818] '>{cardData.hl}</h3>
                             <p className='text-gray-400 text-[14px]'>${cardData.dl}</p>
                         </div>
                         <div className='flex items-end flex-col'>
-                            <h3 className='text-[14px]'>{cardData.hr}</h3>
+                            <h3 className='text-[14px] text-[#181818] '>{cardData.hr}</h3>
                             <p className='text-gray-400 text-[14px]'>${cardData.dr}</p>
                         </div>
                     </div>
@@ -63,7 +63,7 @@ const Lending = () => {
                             <a
                                 href="#"
                                 onClick={() => setOpenTab(1)}
-                                className={` ${openTab === 1 ? "bg-[#181818] text-[#ffffff] rounded-full" : ""} inline-block px-8 py-2 text-gray-600 rounded-full text-[10px]`}
+                                className={` ${openTab === 1 ? "bg-[#181818] text-white rounded-full" : ""} inline-block px-8 py-2 text-gray-600 rounded-full text-[10px]`}
                             >
                                 Supply
                             </a>
@@ -72,7 +72,7 @@ const Lending = () => {
                             <a
                                 href="#"
                                 onClick={() => setOpenTab(2)}
-                                className={` ${openTab === 2 ? "bg-[#181818] text-[#ffffff] rounded-full" : ""} inline-block px-8 py-2 text-gray-600 rounded-full text-[10px]`}
+                                className={` ${openTab === 2 ? "bg-[#181818] text-white rounded-full" : ""} inline-block px-8 py-2 text-gray-600 rounded-full text-[10px]`}
                             >
                                 Borrow
                             </a>
@@ -81,7 +81,7 @@ const Lending = () => {
                             <a
                                 href="#"
                                 onClick={() => setOpenTab(3)}
-                                className={` ${openTab === 3 ? "bg-[#181818] text-[#ffffff] rounded-full" : ""} inline-block px-8 py-2 text-gray-600 rounded-full text-[10px]`}
+                                className={` ${openTab === 3 ? "bg-[#181818] text-white rounded-full" : ""} inline-block px-8 py-2 text-gray-600 rounded-full text-[10px]`}
                             >
                                 Nav
                             </a>
@@ -91,7 +91,7 @@ const Lending = () => {
                         <div className={openTab === 1 ? "block" : "hidden"}>
                             <div className=" bg-white card-card relative grid grid-cols-2  p-8 rounded-[20px] border border-solid border-gray-400">
                                 <div className='border-r border-gray-400 border-solid border-y-0 border-l-0'>
-                                    <h3 className='text-[14px]'>{cardDatas[0].hl}</h3>
+                                    <h3 className='text-[14px] text-[#181818]'>{cardDatas[0].hl}</h3>
                                     <p className='text-gray-400 text-[14px]'>${cardDatas[0].dl}</p>
                                 </div>
                                 <div className='flex items-end flex-col'>
@@ -103,7 +103,7 @@ const Lending = () => {
                         <div className={openTab === 2 ? "block" : "hidden"}>
                             <div className=" bg-white card-card relative grid grid-cols-2  p-8 rounded-[20px] border border-solid border-gray-400">
                                 <div className='border-r border-gray-400 border-solid border-y-0 border-l-0'>
-                                    <h3 className='text-[14px]'>{cardDatas[1].hl}</h3>
+                                    <h3 className='text-[14px] text-[#181818]'>{cardDatas[1].hl}</h3>
                                     <p className='text-gray-400 text-[14px]'>${cardDatas[1].dl}</p>
                                 </div>
                                 <div className='flex items-end flex-col'>
@@ -115,7 +115,7 @@ const Lending = () => {
                         <div className={openTab === 3 ? "block" : "hidden"}>
                             <div className=" bg-white card-card relative grid grid-cols-2  p-8 rounded-[20px] border border-solid border-gray-400">
                                 <div className='border-r border-gray-400 border-solid border-y-0 border-l-0'>
-                                    <h3 className='text-[14px]'>{cardDatas[2].hl}</h3>
+                                    <h3 className='text-[14px] text-[#181818]'>{cardDatas[2].hl}</h3>
                                     <p className='text-gray-400 text-[14px]'>${cardDatas[2].dl}</p>
                                 </div>
                                 <div className='flex items-end flex-col'>

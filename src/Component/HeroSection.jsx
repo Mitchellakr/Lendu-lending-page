@@ -17,6 +17,7 @@ const HeroSection = () => {
                         <button className='py-2 px-6 rounded-full text-[10px] text-gray-500 bg-[#dcdcdc3d] border border-solid border-gray-500'>About Lending</button>
                         <button className='py-2 px-6 rounded-full text-[10px] text-gray-500 bg-[#dcdcdc3d] border border-solid border-gray-500'>About Staking</button>
                         <button className='py-2 px-6 rounded-full text-[10px] text-gray-500 bg-[#dcdcdc3d] border border-solid border-gray-500'>Click to see more</button>
+
                     </div>
                 </div>
                 <div className='flex justify-center'>

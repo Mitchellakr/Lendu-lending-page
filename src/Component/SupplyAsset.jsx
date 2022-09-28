@@ -54,7 +54,7 @@ const SupplyAsset = () => {
 
                 <table className="border-collapse w-full hidden md:table">
                     <thead>
-                        <tr className='text-left'>
+                        <tr className='text-left text-[#181818]'>
                             <th>
                                 <div className='flex items-center gap-2'>
                                     <h2 className='text-[12px]'>Asset</h2>
@@ -75,7 +75,7 @@ const SupplyAsset = () => {
 
                     {/* table body */}
 
-                    <tbody>
+                    <tbody className=' border-x-0 border-b-0 border-t-2 border-solid border-gray-200'>
                         {
                             tableData.map((data) => (
                                 <tr className='table-color machinalight' key={data.id}>

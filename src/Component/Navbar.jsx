@@ -23,8 +23,8 @@ const Navbar = () => {
                         <a href="" className='text-gray-400'>Market</a>
                         <a href="" className='text-gray-400'>Stake</a>
                         <a href="" className='text-gray-400'>Governance</a>
-                        <a href="" className='py-1 px-4 rounded-full border-solid border border-black'>OPts</a>
-                        <a href="" className='py-1 px-4 rounded-full border-solid border border-black'>0ETH</a>
+                        <a href="" className='py-1 px-4 rounded-full border-solid border border-[#181818] text-[#181818]'>OPts</a>
+                        <a href="" className='py-1 px-4 rounded-full border-solid border border-[#181818] text-[#181818]'>0ETH</a>
                         <button className="py-2 px-6 text-white rounded-full bg-[#181818] backdrop relative">008xx..xscze....</button>
                     </nav>
 
