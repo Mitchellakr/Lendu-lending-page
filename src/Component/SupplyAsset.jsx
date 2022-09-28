@@ -109,6 +109,44 @@ const SupplyAsset = () => {
                         }
                     </tbody>
                 </table>
+
+                {/* mobile view */}
+
+                <div className="py-4 pb-2 md:hidden">
+                    {
+                        tableData.map((data) => (
+                            <div key={data.id} className=' shadow-xl rounded-[12px] mb-8'>
+                                <div className='flex justify-between items-center p-3 border-b-2 border-solid border-gray-200 border-t-0 border-x-0'>
+                                    <div className='flex gap-2 items-center'>
+                                        <img src={data.img} alt="crypto image" />
+                                        <p>{data.name}</p>
+                                    </div>
+                                    <p>{data.name}</p>
+                                </div>
+                                <div className='p-3'>
+                                    <div className='wac grid grid-cols-3 gap-2 mb-3'>
+                                        <div className='bg-gray-100 p-2 rounded-lg'>
+                                            <h3 className='py-1'>Wallet balance</h3>
+                                            <p className='py-1 machinalight'>${data.walletbalance}</p>
+                                        </div>
+                                        <div className='bg-gray-100 p-2 rounded-lg'>
+                                            <h3 className='py-1'>Apy</h3>
+                                            <p className='py-1 machinalight'>{data.Apy}%</p>
+                                        </div>
+                                        <div className='bg-gray-100 p-2 rounded-lg'>
+                                            <h3 className='py-1'>Collateral</h3>
+                                            <p className='py-1 machinalight'>{data.cbc}</p>
+                                        </div>
+                                    </div>
+                                    <div className="cardBtns grid grid-cols-3 gap-4 mb-3">
+                                        <button className="cardBtn py-2 px-6 col-span-2 text-white rounded-full bg-[#181818]">Supply</button>
+                                        <button href="" className='py-2 px-6 rounded-full border-solid border border-black'>Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
             </div>
         </div>
     )

@@ -95,3 +95,17 @@ code {
 .machinalight {
   font-family: 'NeueMachina';
 }
+
+@media only screen and (max-width:530px) {
+  .wac {
+    grid-template-columns: 1fr;
+  }
+
+  .cardBtn {
+    grid-column: span 1;
+  }
+
+  .cardBtns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
