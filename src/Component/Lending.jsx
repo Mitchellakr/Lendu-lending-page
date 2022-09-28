@@ -58,35 +58,32 @@ const Lending = () => {
 
             <div className='sm:hidden flex justify-center'>
                 <div className="flex flex-col items-center justify-center max-w-xl">
-                    <ul className="flex gap-2 p-1 rounded-full bg-[#dcdcdc3d]">
-                        <li>
-                            <a
-                                href="#"
+                    <div className="flex gap-2 p-1 rounded-full bg-[#dcdcdc3d]">
+                        <div>
+                            <button
                                 onClick={() => setOpenTab(1)}
-                                className={` ${openTab === 1 ? "bg-[#181818] text-white rounded-full" : ""} inline-block px-8 py-2 text-gray-600 rounded-full text-[10px]`}
+                                className={` ${openTab === 1 ? "bg-[#181818] text-[#ffffff] rounded-full" : ""} inline-block px-8 py-2 text-gray-600 rounded-full text-[10px]`}
                             >
                                 Supply
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#"
+                            </button>
+                        </div>
+                        <div>
+                            <button
                                 onClick={() => setOpenTab(2)}
-                                className={` ${openTab === 2 ? "bg-[#181818] text-white rounded-full" : ""} inline-block px-8 py-2 text-gray-600 rounded-full text-[10px]`}
+                                className={` ${openTab === 2 ? "bg-[#181818] text-[#ffffff] rounded-full" : ""} inline-block px-8 py-2 text-gray-600 rounded-full text-[10px]`}
                             >
                                 Borrow
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#"
+                            </button>
+                        </div>
+                        <div>
+                            <button
                                 onClick={() => setOpenTab(3)}
-                                className={` ${openTab === 3 ? "bg-[#181818] text-white rounded-full" : ""} inline-block px-8 py-2 text-gray-600 rounded-full text-[10px]`}
+                                className={` ${openTab === 3 ? "bg-[#181818] text-[#ffffff] rounded-full" : ""} inline-block px-8 py-2 text-gray-600 rounded-full text-[10px]`}
                             >
                                 Nav
-                            </a>
-                        </li>
-                    </ul>
+                            </button>
+                        </div>
+                    </div>
                     <div className="w-full mt-6 bg-white border">
                         <div className={openTab === 1 ? "block" : "hidden"}>
                             <div className=" bg-white card-card relative grid grid-cols-2  p-8 rounded-[20px] border border-solid border-gray-400">

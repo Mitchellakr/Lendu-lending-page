@@ -121,7 +121,7 @@ const SupplyAsset = () => {
                                         <img src={data.img} alt="crypto image" />
                                         <p>{data.name}</p>
                                     </div>
-                                    <p>{data.name}</p>
+                                    <p className='text-gray-500 machinalight uppercase '>{data.name.slice(0, 3)}</p>
                                 </div>
                                 <div className='p-3'>
                                     <div className='wac grid grid-cols-3 gap-2 mb-3'>
