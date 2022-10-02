@@ -31,7 +31,7 @@ const Lending = () => {
 
     return (
 
-        <div className="my-8 mt-[4em] w-4/5 max-w-screen-xl mx-auto">
+        <div className="my-8 mt-[4em] w-11/12 max-w-screen-xl mx-auto">
             <div className='flex items-center gap-2 pb-4'>
                 <img src={lendingIcon} alt="lending icon" />
                 <h2 className='text-xl'>Lending</h2>

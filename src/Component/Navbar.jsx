@@ -13,7 +13,7 @@ const Navbar = () => {
             {/* this is the header section*/}
 
             <header className='w-full fixed bg-white shadow z-50'>
-                <div className="w-4/5 max-w-screen-xl mx-auto flex md:items-center justify-between py-4 item-start ">
+                <div className="w-11/12 max-w-screen-xl mx-auto flex md:items-center justify-between py-4 item-start ">
                     <h1 className='text-2xl mr-20'>Lendu</h1>
 
                     {/* Desktop Nav */}

@@ -40,7 +40,7 @@ const SupplyAsset = () => {
     ]
 
     return (
-        <div className="my-8 mt-[4em] w-4/5 max-w-screen-xl mx-auto">
+        <div className="my-8 mt-[4em] w-11/12 max-w-screen-xl mx-auto">
             <div className='flex items-center gap-2 pb-4'>
                 <h2 className='text-xl'>Supply Asset</h2>
                 <img className='pt-1 w-[20px]' src={arrow} alt="lending icon" />
